@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0"
+  class="in-text"
+  name="National Library of Medicine (Modified for IJMS)"
+  category="medicine">
+  <info>
+    <title>National Library of Medicine (Modified for IJMS)</title>
+    <id>http://www.zotero.org/styles/nlm-modified-ijms</id>
+    <link href="http://www.zotero.org/styles/nlm" rel="template"/>
+    <author>
+      <name>Modified by ChatGPT</name>
+    </author>
+    <category field="medicine"/>
+    <updated>2025-09-16T00:00:00+00:00</updated>
+  </info>
+
+  <!-- Citation format -->
+  <citation collapse="citation-number">
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <!-- Bibliography format -->
+  <bibliography et-al-min="7" et-al-use-first="6" hanging-indent="true">
+    <layout>
+      <text variable="citation-number" prefix="[" suffix="] "/>
+      <text variable="author"/>
+      <text variable="title" prefix=" " suffix="."/>
+      <text variable="container-title" prefix=" " suffix="."/>
+      <group delimiter=";">
+        <text variable="volume"/>
+        <text variable="issue" prefix="(" suffix=")"/>
+        <text variable="page"/>
+      </group>
+      <date variable="issued" prefix=" " suffix=".">
+        <date-part name="year"/>
+      </date>
+    </layout>
+  </bibliography>
+</style>
